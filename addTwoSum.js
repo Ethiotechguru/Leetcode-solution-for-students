@@ -42,7 +42,7 @@ const addTwoSum = (a, b)=>{
     return dummyRes.next;
 }
 //([2,4,3],[5,6,4]) ([0],[0]) ([9,9,9,9,9,9,9], [9,9,9,9])
-let LinkedList = createLinkedList([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]);//[2,4]
+let LinkedList = createLinkedList([9,3], [3]);//[6,9]
 
 function ListToArr(list) {
     let arr = [];

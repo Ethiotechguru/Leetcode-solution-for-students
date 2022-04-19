@@ -1,0 +1,19 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "addTwoSum.js",
+  "scripts": {
+    "start": "node addTwoSum.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethiotechguru/Leetcode-solution-for-students.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ethiotechguru/Leetcode-solution-for-students/issues"
+  },
+  "homepage": "https://github.com/Ethiotechguru/Leetcode-solution-for-students#readme"
+}
