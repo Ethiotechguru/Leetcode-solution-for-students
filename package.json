@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "addTwoSum.js",
 	"scripts": {
-		"start": "node longestSubStr.js"
+		"start": "node deleteMiddelOfLinkedList.js"
 	},
 	"repository": {
 		"type": "git",
