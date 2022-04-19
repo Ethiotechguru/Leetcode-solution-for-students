@@ -2,9 +2,9 @@
 	"name": "leetcode",
 	"version": "1.0.0",
 	"description": "",
-	"main": "addTwoSum.js",
+	"main": "removingNthNodeOfLinkedList.js",
 	"scripts": {
-		"start": "node deleteMiddelOfLinkedList.js"
+		"start": "node removingNthNodeOfLinkedList.js"
 	},
 	"repository": {
 		"type": "git",
