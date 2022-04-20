@@ -2,9 +2,9 @@
 	"name": "leetcode",
 	"version": "1.0.0",
 	"description": "",
-	"main": "removingNthNodeOfLinkedList.js",
+	"main": "groupingElemInArr.js",
 	"scripts": {
-		"start": "node removingNthNodeOfLinkedList.js"
+		"start": "node groupingElemInArr.js"
 	},
 	"repository": {
 		"type": "git",
