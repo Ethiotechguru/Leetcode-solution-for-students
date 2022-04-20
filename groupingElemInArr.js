@@ -13,22 +13,26 @@ const arr = [
 	"act",
 	"pam",
 ];
+let {bigData} = require('./BigData');
+// console.log(bigData)
 //return Value [['kuss'],['eat', 'tea'],['sukk'],['cat', 'tac', 'act'],['rat', 'art'],['man', 'amn', 'nam'],['pam']]
 
 function PalindromeGrouping(arr) {
+	let timeStart = Date.now();
 	let groupedPalindrome = [];
 	let i = 0;
 	while (i < arr.length) {
-		let map = {};
+		
 		let j = i + 1;
 		let temp = [arr[i]];
 		let first = arr[i].split("");
 		while (j < arr.length) {
+			let map = {};
 			let second = arr[j].split("");
 			if (
 				arr[i].length !== arr[j].length &&
 				new Set(first) !== new Set(second)
-			) {
+			){
 				j++;
 			} else {
 				for (let k = 0; k < first.length; k++) {
@@ -57,8 +61,9 @@ function PalindromeGrouping(arr) {
 		groupedPalindrome.push(temp);
 		i++;
 	}
-    console.log(groupedPalindrome);
-	return groupedPalindrome;
+	console.log(groupedPalindrome);
+    console.log(Date.now() - timeStart);
 }
 
-PalindromeGrouping(arr);
+PalindromeGrouping(bigData);
+
