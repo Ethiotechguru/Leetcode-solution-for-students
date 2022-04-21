@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "groupingElemInArr.js",
 	"scripts": {
-		"start": "node groupingElemInArr.js"
+		"start": "node mergeKLists.js"
 	},
 	"repository": {
 		"type": "git",
