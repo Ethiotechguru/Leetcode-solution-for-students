@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "groupingElemInArr.js",
 	"scripts": {
-		"start": "node mergeKLists.js"
+		"start": "node twoSumII.js"
 	},
 	"repository": {
 		"type": "git",
