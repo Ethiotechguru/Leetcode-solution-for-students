@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "groupingElemInArr.js",
 	"scripts": {
-		"start": "node tree.js"
+		"start": "node BigDataPosetiveIntiger.js"
 	},
 	"repository": {
 		"type": "git",
