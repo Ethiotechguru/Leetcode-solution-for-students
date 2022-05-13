@@ -23,6 +23,7 @@ function buildAdjacencyList(edges) {
 	}
 	return map;
 }
+//shout out put 
 //{i:[j,k],j:[i,m], k:[i,m], m:[k,j,n],n:[m,o],o:[n],p:[q],q:[p]};
 let adjacencyList = buildAdjacencyList(edge);
 
@@ -36,6 +37,7 @@ function hasPath(adjList, src, des) {
 			if (visited.has(src)) {
 				return false;
 			}
+            
 			visited.add(src);
 			console.log(visited);
 			for (let neighbor of adjList[src]) {
