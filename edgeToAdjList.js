@@ -28,30 +28,24 @@ function buildAdjacencyList(edges) {
 let adjacencyList = buildAdjacencyList(edge);
 
 function hasPath(adjList, src, des) {
-	if (adjList[src]) {
-		function checkPath(src, des, visited) {
-			if (src === des) {
-				console.log(src, des);
-				return true;
-			}
-			if (visited.has(src)) {
-				return false;
-			}
-            
-			visited.add(src);
-			console.log(visited);
-			for (let neighbor of adjList[src]) {
-				if (checkPath(neighbor, des, visited) === true) {
-					return true;
-				}
-			}
-		}
-		if (checkPath(src, des, new Set())) {
-			return true;
-		}
-		return false;
-	}
-
-	return null;
+    if (!adjList[src]){
+        return false;
+    }
+    function checkPath(src, des, visited) {
+        if (src === des) {
+            return true;
+        }
+        if (visited.has(src)) {
+            return false;
+        }
+        visited.add(src);
+        for (let neighbor of adjList[src]) {
+            if (checkPath(neighbor, des, visited) === true) {
+                return true;
+            }
+        }
+        return false;
+    }
+    return checkPath(src, des, new Set())
 }
 hasPath(adjacencyList, "i", "o");
