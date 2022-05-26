@@ -5,9 +5,7 @@ class Node {
 	}
 }
 let helperFunc = (h1, h2, node) => {
-	if (h1 === null) {
-		node.next = h2;
-	}
+	if (h1 === null) node.next = h2;
 };
 const def = (dummy, node, h1, h2) => {
 	if (h1 === null || h2 === null) return dummy.next;
