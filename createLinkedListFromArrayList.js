@@ -16,7 +16,6 @@ const createLinkedList = (values) => {
 	return dummy;
 };
 const createLinkedListRecursive = (values) => {
-  // todo
     if(values.length === 0) return null;
     let node = new Node(values[0]);
     node.next = createLinkedList(values.slice(1));

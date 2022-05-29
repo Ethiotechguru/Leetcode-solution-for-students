@@ -1,0 +1,18 @@
+const helperFunc = (n,set)=>{
+  if(+n===1) return true;
+  if(set.has(n)) return false;
+  set.add(n);
+  let sum = 0;
+  for(let i = 0; i<n.length; i++){
+    sum = sum+ (+n[i])**2;
+  }
+    console.log(set)
+  return helperFunc(sum.toString(),set)
+}
+var isHappy = function(n) {
+    let num = n.toString();
+    let set = new Set();
+    return helperFunc(num,set)
+};
+
+isHappy(19)
