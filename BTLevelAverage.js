@@ -14,6 +14,7 @@ const levelAverages = (root) => {
 		if (node.left !== null) {
 			let nod = { node: node.left, level: lev };
 			stack.push(nod);
+			
 		}
 		if (node.right !== null) {
 			let nod = { node: node.right, level: lev };
